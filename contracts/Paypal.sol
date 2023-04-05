@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-contract PayPal {
+contract Paypal {
     // Define the owner of the contract
     address public owner;
 
@@ -150,7 +150,7 @@ contract PayPal {
         return history[_user];
     }
 
-    function getMyName(address _user) public view returns (string memory) {
+    function getMyName(address _user) public view returns (userName memory) {
         return names[_user];
     }
 }
